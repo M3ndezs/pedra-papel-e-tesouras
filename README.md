@@ -41,8 +41,6 @@ O desafio consistiu em criar uma aplicação web interativa que simula o jogo Pe
 Você pode jogar online ou clonar o repositório:
 
 
-* 🌐 [GitHub Pages](https://M3ndezs.github.io/pedra-papel-e-tesouras) 
+* 🌐 [GitHub Pages](https://M3ndezs.github.io/pedra-papel-e-tesouras)
 
----
-
-Se quiser, posso te ajudar a criar esse README diretamente no seu repositório também. Deseja que eu gere o arquivo completo com markdown para copiar e colar?
+  
