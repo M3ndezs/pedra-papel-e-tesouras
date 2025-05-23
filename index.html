@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <h1>Pedra, Papel e Tesoura</h1>
+
+  <div class="placar">
+    Você: <span id="player-score">0</span> |
+    Máquina: <span id="machine-score">0</span>
+  </div> 
+<br>
+<br>
+<div class="reiniciar"> 
+<button onclick="reiniciar()">Reiniciar Jogo</button>
+</div>
+<br>
+<br>
+ <div class="opcoes">
+    <button onclick="jogar('pedra')">
+      <img src="img/pedra.png" alt="Pedra">
+    </button>
+    <button onclick="jogar('papel')">
+      <img src="img/papel.png" alt="Papel">
+    </button>
+    <button onclick="jogar('tesoura')">
+      <img src="img/tesoura.png" alt="Tesoura">
+    </button>
+  </div>
+<br>
+<br>
+  <div class="jogadas">
+    <div>
+      <h3>Sua escolha:</h3>
+      <img id="jogada-jogador" src="img/interrogacao.png" alt="Sua jogada">
+    </div>
+    <div>
+      <h3>Escolha da máquina:</h3>
+      <img id="jogada-maquina" src="img/interrogacao.png" alt="Jogada da máquina">
+    </div>
+  </div>
+
+  <div class="resultado" id="resultado">Escolha sua jogada!</div>
+<br>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

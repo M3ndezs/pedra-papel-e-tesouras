@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.placar {
+  font-size: 20px;
+  margin-top: 20PX;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.opcoes {
+    margin-top: 50px;
+}
+
+.opcoes button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.opcoes img {
+  width: 100px;
+  transition: transform 0.2s;
+}
+
+.opcoes img:hover {
+  transform: scale(1.1);
+}
+
+.jogadas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 40px;
+}
+
+.jogadas img {
+  width: 100px;
+  height: 100px;
+}
+
+.resultado {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.reiniciar button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+      <h1>Pedra, Papel e Tesoura</h1>
+
+  <div class="placar">
+    Você: <span id="player-score">0</span> |
+    Máquina: <span id="machine-score">0</span>
+  </div> 
+<br>
+<br>
+<div class="reiniciar"> 
+<button onclick="reiniciar()">Reiniciar Jogo</button>
+</div>
+<br>
+<br>
+ <div class="opcoes">
+    <button onclick="jogar('pedra')">
+      <img src="img/pedra.png" alt="Pedra">
+    </button>
+    <button onclick="jogar('papel')">
+      <img src="img/papel.png" alt="Papel">
+    </button>
+    <button onclick="jogar('tesoura')">
+      <img src="img/tesoura.png" alt="Tesoura">
+    </button>
+  </div>
+<br>
+<br>
+  <div class="jogadas">
+    <div>
+      <h3>Sua escolha:</h3>
+      <img id="jogada-jogador" src="img/interrogacao.png" alt="Sua jogada">
+    </div>
+    <div>
+      <h3>Escolha da máquina:</h3>
+      <img id="jogada-maquina" src="img/interrogacao.png" alt="Jogada da máquina">
+    </div>
+  </div>
+
+  <div class="resultado" id="resultado">Escolha sua jogada!</div>
+<br>
+
+
+  <script >
+    let playerScore = 0;
+let machineScore = 0;
+
+function jogar(jogadaJogador) {
+  const opcoes = ['pedra', 'papel', 'tesoura'];
+  const jogadaMaquina = opcoes[Math.floor(Math.random() * 3)];
+  
+  document.getElementById('jogada-jogador').src = `img/${jogadaJogador}.png`;
+  document.getElementById('jogada-maquina').src = `img/${jogadaMaquina}.png`;
+
+  const resultado = document.getElementById('resultado');
+
+  if (jogadaJogador === jogadaMaquina) {
+    resultado.textContent = "Empate!";
+  } else if (
+    (jogadaJogador === 'pedra' && jogadaMaquina === 'tesoura') ||
+    (jogadaJogador === 'papel' && jogadaMaquina === 'pedra') ||
+    (jogadaJogador === 'tesoura' && jogadaMaquina === 'papel')
+  ) {
+    playerScore++;
+    resultado.textContent = "Você ganhou!";
+  } else {
+    machineScore++;
+    resultado.textContent = "Você perdeu! hahaha";
+  }
+
+  document.getElementById('player-score').textContent = playerScore;
+  document.getElementById('machine-score').textContent = machineScore;
+}
+
+function reiniciar() {
+  playerScore = 0;
+  machineScore = 0;
+
+  document.getElementById('player-score').textContent = playerScore;
+  document.getElementById('machine-score').textContent = machineScore;
+
+  document.getElementById('jogada-jogador').src = 'img/interrogacao.png';
+  document.getElementById('jogada-maquina').src = 'img/interrogacao.png';
+
+  document.getElementById('resultado').textContent = 'Escolha sua jogada!';
+}
+
+  </script>
+</body>
+</html>

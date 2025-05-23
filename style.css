@@ -1,0 +1,65 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.placar {
+  font-size: 20px;
+  margin-top: 20PX;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.opcoes {
+    margin-top: 50px;
+}
+
+.opcoes button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.opcoes img {
+  width: 100px;
+  transition: transform 0.2s;
+}
+
+.opcoes img:hover {
+  transform: scale(1.1);
+}
+
+.jogadas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 40px;
+}
+
+.jogadas img {
+  width: 100px;
+  height: 100px;
+}
+
+.resultado {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.reiniciar button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
