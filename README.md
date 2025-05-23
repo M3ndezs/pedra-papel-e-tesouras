@@ -1,35 +1,48 @@
-Pedra, Papel e Tesoura
+# Pedra, Papel e Tesoura
+
 Um jogo clássico recriado usando HTML, CSS e JavaScript puro. O jogador compete contra o computador, tentando adivinhar e vencer com base nas regras tradicionais de pedra, papel e tesoura.
 
-🧩 Descrição do Desafio
+---
+
+## 🧩 Descrição do Desafio
+
 O desafio consistiu em criar uma aplicação web interativa que simula o jogo Pedra, Papel e Tesoura. A interface precisava ser intuitiva, responsiva e com um sistema simples de pontuação ou feedback visual para mostrar o resultado da partida.
 
-🛠️ Tecnologias Utilizadas
-HTML: Estrutura básica da página.
+---
 
-CSS: Estilização do layout e responsividade.
+## 🛠️ Tecnologias Utilizadas
 
-JavaScript: Lógica do jogo, interação do usuário e manipulação do DOM.
+* **HTML5**: Estrutura básica da página.
+* **CSS3**: Estilização do layout e responsividade.
+* **JavaScript (Vanilla)**: Lógica do jogo, interação do usuário e manipulação do DOM.
 
-🎮 Como Jogar
-Abra o jogo em um navegador web.
+---
 
-Escolha uma das três opções: Pedra, Papel ou Tesoura.
+## 🎮 Como Jogar
 
-O computador fará sua escolha aleatoriamente.
+1. Abra o jogo em um navegador web.
+2. Escolha uma das três opções: **Pedra**, **Papel** ou **Tesoura**.
+3. O computador fará sua escolha aleatoriamente.
+4. O jogo exibirá o resultado: vitória, derrota ou empate.
+5. Clique novamente para jogar outra rodada!
 
-O jogo exibirá o resultado: vitória, derrota ou empate.
+---
 
-Clique novamente para jogar outra rodada!
-
-📸 Prints ou GIFs da Execução
-
-![Captura de tela 2025-05-23 141909](https://github.com/user-attachments/assets/9c119ce0-c9f2-4101-b8f4-830983b30a54)
+## 📸 Prints ou GIFs da Execução
 
 
-🔗 Acesse o Projeto
+![Captura de tela 2025-05-23 141909](https://github.com/user-attachments/assets/f6f1c8dd-6290-43d9-9649-301cb29c5a10)
+
+
+---
+
+## 🔗 Acesse o Projeto
+
 Você pode jogar online ou clonar o repositório:
 
 
-🌐 GitHub Pages: https://m3ndezs.github.io/pedra-papel-e-tesouras/
+* 🌐 [GitHub Pages](https://M3ndezs.github.io/pedra-papel-e-tesouras) 
 
+---
+
+Se quiser, posso te ajudar a criar esse README diretamente no seu repositório também. Deseja que eu gere o arquivo completo com markdown para copiar e colar?
